@@ -1,0 +1,105 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+ 
+body {
+font-family: Arial, sans-serif;
+background: #f4f4f4;
+color: #333;
+}
+ 
+header {
+background: #0078d7;
+color: white;
+text-align: center;
+padding: 1rem;
+}
+ 
+main {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+}
+ 
+footer {
+text-align: center;
+padding: 1rem;
+background: #222;
+color: white;
+}
+ 
+#note-form {
+display: flex;
+gap: 10px;
+margin: 15px 0;
+flex-wrap: wrap;
+}
+ 
+#note-input,
+#note-category,
+#search-input {
+padding: 10px;
+}
+ 
+button {
+padding: 10px 15px;
+border: none;
+background: #0078d7;
+color: white;
+cursor: pointer;
+}
+ 
+button:hover {
+background: #005fa3;
+}
+ 
+#notes-list {
+list-style: none;
+margin-top: 20px;
+}
+ 
+.note-card {
+padding: 15px;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin-bottom: 10px;
+background: white;
+}
+ 
+.category-personal {
+border-left: 6px solid teal;
+}
+ 
+.category-work {
+border-left: 6px solid darkred;
+}
+ 
+.category-study {
+border-left: 6px solid blue;
+}
+ 
+.delete-btn {
+margin-top: 10px;
+background: crimson;
+}
+ 
+.delete-btn:hover {
+background: darkred;
+}
+ 
+#error-message {
+color: red;
+margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+#note-form {
+flex-direction: column;
+}
+}
+ 
+button {
+width: 100%;
+}
